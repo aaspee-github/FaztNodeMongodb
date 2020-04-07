@@ -1,68 +1,101 @@
-Server on port 3000
-DB is conected
-(node:8896) UnhandledPromiseRejectionWarning: ReferenceError: User is not defined
-    at router.post (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\src\routes\users.js:31:27)
-    at Layer.handle [as handle_request] (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\layer
-    at next (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\layer
-    at C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:281:22
-    at Function.process_params (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:335:1dex.js:284:7ter\index.js:275:10)
-    at Function.process_params (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_moduess\lib\router\index.js:174:3)les\express\lib\router\index.js:335:12)outer\index.js:47:12)
-    at next (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\rounode_modules\express\lib\router\layerter\index.js:275:10)lib\router\index.js:317:13)
-    at C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:284:7dex.js:635:15les\express\lib\router\index.js:335:1
-(node:8896) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originatter\index.js:275:10)ed either by throwing inside of an async function without a catch block, or by rejecting a prodex.js:635:15mise which was not handled with .catch(). (rejection id: 1)ed either by throwing inside of an as
-(node:8896) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-future, promise rejections that are nzero exit code.
-(node:8896) UnhandledPromiseRejectionWarning: ReferenceError: User is not defined
-    at router.post (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\src\routes\users.js:31:27)
-    at Layer.handle [as handle_request] (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\layer.js:95:5)
-    at C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:281:22
-    at Function.process_params (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:335:12)
-    at next (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:275:10)
-    at Function.handle (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:174:3)
-    at router (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:47:12)
-    at Layer.handle [as handle_request] (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:275:10)
-    at C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:635:15
-(node:8896) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+> git branch
+> git reset -q HEAD -- C:\Users\aaspe\Desktop\Py-curso\05-FaztNodeMongodb\README.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git ls-files --stage -- C:\Users\aaspe\Desktop\Py-curso\05-FaztNodeMongodb\README.md
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git cat-file -s 3f30236a999133fb87372c9312b5af18d4513f43
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :README.md
+> git config --get commit.template
+
+git.stage 1
+git.stage.scmResources 1
+> git add -A -- C:\Users\aaspe\Desktop\Py-curso\05-FaztNodeMongodb\README.md
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git ls-files --stage -- C:\Users\aaspe\Desktop\Py-curso\05-FaztNodeMongodb\README.md
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git cat-file -s 9b90774b693ccc84e806eeebf0bf1b3455babb7d
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :README.md
+> git config --get commit.template
 
 
-Server on port 3000
-DB is conected 
-(node:12212) UnhandledPromiseRejectionWarning: ReferenceError: User is not defined
-    at router.post (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\src\routes\users.js:32:27)
-    at Layer.handle [as handle_request] (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\layer.js:95:5) 
-    at next (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\layer.js:95:5) 
-    at C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:281:22
-    at Function.process_params (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:335:12)        
-    at next (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:275:10)
-    at Function.handle (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:174:3)
-    at router (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:47:12)
-    at Layer.handle [as handle_request] (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\layer.js:95:5) 
-    at trim_prefix (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:317:13)
-    at C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:284:7
-    at Function.process_params (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:335:12)        
-    at next (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:275:10)
-    at C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\node_modules\express\lib\router\index.js:635:15
-(node:12212) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
-(node:12212) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+ git show :Error.txt
+> git ls-files --stage -- C:\Users\aaspe\Desktop\Py-curso\05-FaztNodeMongodb\Error.txt
+> git cat-file -s 9aeaa24f31421ce8750ffdfe7b677c48fe20a2e8
+> git show :README.md
+> git ls-files --stage -- C:\Users\aaspe\Desktop\Py-curso\05-FaztNodeMongodb\README.md
+> git cat-file -s 3f30236a999133fb87372c9312b5af18d4513f43
+> git show :Error.txt
+> git ls-files --stage -- C:\Users\aaspe\Desktop\Py-curso\05-FaztNodeMongodb\Error.txt
+> git cat-file -s 9aeaa24f31421ce8750ffdfe7b677c48fe20a2e8
 
+ git commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git ls-files --stage -- C:\Users\aaspe\Desktop\Py-curso\05-FaztNodeMongodb\README.md
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git cat-file -s 9b90774b693ccc84e806eeebf0bf1b3455babb7d
+> git show :README.md
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
 
-Server on port 3000
-DB is conected
-(node:9672) UnhandledPromiseRejectionWarning: TypeError: user.matchPassword is not a function 
-    at Strategy.passport.use.LocalStrategy [as _verify] (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\src\config\passport.js:16:38)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-(node:9672) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async 
-function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
-(node:9672) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
-(node:9672) UnhandledPromiseRejectionWarning: TypeError: user.matchPassword is not a function
-    at Strategy.passport.use.LocalStrategy [as _verify] (C:\Users\aaspe\Desktop\Py-curso\05_Fazt_node_mongodb\src\config\passport.js:16:38)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-(node:9672) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async 
-function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+> git commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git ls-files --stage -- C:\Users\aaspe\Desktop\Py-curso\05-FaztNodeMongodb\README.md
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git cat-file -s 9b90774b693ccc84e806eeebf0bf1b3455babb7d
+> git show :README.md
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
+> git show HEAD:Error.txt
+> git ls-tree -l HEAD -- C:\Users\aaspe\Desktop\Py-curso\05-FaztNodeMongodb\Error.txt
+> git show :Error.txt
+> git ls-files --stage -- C:\Users\aaspe\Desktop\Py-curso\05-FaztNodeMongodb\Error.txt
+> git cat-file -s 9aeaa24f31421ce8750ffdfe7b677c48fe20a2e8
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :README.md
+> git ls-files --stage -- C:\Users\aaspe\Desktop\Py-curso\05-FaztNodeMongodb\README.md
+> git cat-file -s 9b90774b693ccc84e806eeebf0bf1b3455babb7d
+> git fetch
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+
