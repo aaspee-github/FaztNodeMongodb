@@ -2,7 +2,7 @@ const router = require("express").Router();
 
 const {
   renderSignUpForm,
-  singup,
+  signup,
   renderSigninForm,
   signin,
   logout
@@ -11,7 +11,7 @@ const {
 // Routes
 router.get("/users/signup", renderSignUpForm);
 
-router.post("/users/signup", singup);
+router.post("/users/signup", signup);
 
 router.get("/users/signin", renderSigninForm);
 
