@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
 
-mongoose.set("useFindAndModify", false);
-mongoose.connect('mongodb://localhost/notes-db-app', {
-  useCreateIndex: true,
-  useNewUrlParser: true // useFindAndModify: false, useUnifiedTopology: true
+const { NOTES_APP_MONGDB_HOST, NOTES_APP_MONGODB_DATABASE } = process.env;
+
+const MONGODB_URI = 'mongodb://${NOTES_APP_MONGDB_HOST}/${NOTES_APP_MONGODB_DATABASE}';
+
+mongoose
+  .connect(MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 })
   .then(db => console.log('DB is conected'))
   .catch(err => console.error(err));
