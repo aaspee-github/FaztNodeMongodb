@@ -1,15 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# Dependencies
-# Nodejs
-node_modules
-
-# npm
-package-lock.json
-
-# enviroment variables y control
+/.vscode
+/node_modules
 .env
-.vscode
-
-# Archivos de comentarios
+package-lock.json
 *.txt
