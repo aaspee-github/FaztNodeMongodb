@@ -4,7 +4,8 @@
   "description": "Notes App",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,9 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "dotenv": "^8.2.0",
+    "handlebars": "^4.5.0",
+    "nodemon": "^2.0.2",
+    "npm-check-updates": "^4.0.1"
   }
 }

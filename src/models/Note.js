@@ -9,14 +9,4 @@ const NoteSchema = new Schema({
     user: { type: String, required: true}
 });
 
-
-
-
-
-
-
-
-
-
-
 module.exports = mongoose.model('Note', NoteSchema);

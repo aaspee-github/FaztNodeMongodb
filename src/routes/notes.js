@@ -39,51 +39,22 @@ router.post('/notes/new-note', isAuthenticated, async (req, res) => {
 
 // Get All Notes
 router.get('/notes', isAuthenticated, async (req, res) => {
-    // const notes = await Note.find({user: req.user.id}).sort({date: 'desc'});
-    // res.render('notes/all-notes', { notes });
-
-    await Note.find({user: req.user.id}).sort({date: 'desc'})
-        .then(documentos => {
-            const contexto = {
-                notes: documentos.map(documento => {
-                    return {
-                        title: documento.title,
-                        description: documento.description,
-                        date: documento.date,
-// Ojo Aspee                        _id: documento._id
-                        id: documento.id
-                    }
-                })
-            }
-            // console.log(contexto.notes)
-            res.render('notes/all-notes', { notes: contexto.notes })
-        })
-
+    const notes = await Note.find({user: req.user.id}).sort({date: 'desc'});
+    res.render('notes/all-notes', { notes });
 });
 
 // Edit Notes
 router.get('/notes/edit/:id', isAuthenticated, async (req, res) => {
-    // await notes = Note.findById(req.params.id);
-    // res.render('notes/edit-notes', { notes});
-    const note = await Note.findById(req.params.id)
-    .then(data =>{
-        return {
-            title: data.title,
-            description: data.description,
-            id: data.id
-        }
-    });
-
+    const note = await Note.findById(req.params.id);
     if(note.user != req.user.id) {
         req.flash('error_msg', 'Not Authorized');
-        return res.redirect('notes');
+        return res.redirect('/notes');
     }
-
-    res.render('notes/edit-notes',{note})
+    res.render('notes/edit-notes',{ note });
 });
 
 router.put('/notes/edit-note/:id', isAuthenticated, async (req, res) =>{
-    const {title, description} = req.body;
+    const { title, description } = req.body;
     await Note.findByIdAndUpdate(req.params.id, {title, description});
     req.flash('success_msg', 'Note Updated Successfuly');
     res.redirect('/notes');

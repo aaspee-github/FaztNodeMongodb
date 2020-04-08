@@ -1,12 +1,15 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Dependencies
-/node_modules
+# Nodejs
+node_modules
+
+# npm
+package-lock.json
+
+# enviroment variables y control
+.env
+.vscode
+
+# Archivos de comentarios
 *.txt
-
-# IntelliJ
-.idea/
-/out/
-
-# mpeltonen/sbt-idea plugin
-.idea_modules/
